@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Арминэ Ерчева](https://up.htmlacademy.ru/htmlcss-individual/1/user/2478825).
-* Наставник: `Виктория Никитина`https://htmlacademy.ru/profile/id1217273.
+* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
 
 ---
 
