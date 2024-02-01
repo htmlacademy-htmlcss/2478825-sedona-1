@@ -47,7 +47,9 @@ body {
 .menu-item {}
 
 .menu-link {
-    font-size:20px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
     font-weight: 700;
     line-height: 24px;
     color: #000000;
@@ -58,7 +60,7 @@ body {
 .user-menu-item {}
 
 .user-menu-link {
-    font-size:20px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 24px;
     color: #000000;
@@ -76,6 +78,11 @@ body {
 .welcome-quote {
     background-image:
         url(../images/index-background.jpg);
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
 }
 
 .reasons {}
@@ -97,7 +104,10 @@ body {
     text-align: center;
 }
 
-.reason-list {}
+.reason-list {
+    margin: 0;
+    padding: 0;
+}
 
 .reason-item {
     background: #82B3D3;
@@ -144,7 +154,10 @@ body {
     font-family: "PT Sans";
 }
 
-.advantages-list {}
+.advantages-list {
+    margin: 0;
+    padding: 0;
+}
 
 ..advantages-item {}
 
@@ -224,6 +237,7 @@ body {
     font-weight: 400;
     line-height: 40px;
 }
+
 .button {}
 
 .text {}
