@@ -14,8 +14,12 @@
     font-display: swap;
 }
 
-body {
-    font-family: "PT Sans", "Arial" sans-serif;
+html {
+    height: 100%;
+}
+
+.body {
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
@@ -23,9 +27,14 @@ body {
     background-color: #ffffff;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
-.page-header {}
+.page-header {
+    display: flex;
+}
 
 .logo-link {}
 
@@ -40,11 +49,19 @@ body {
     line-height: 24px;
     color: #000000;
     background-color: #ffffff;
+    display: flex;
+    width: 1200px;
+
 }
 
-.menu-list {}
+.menu-list {
+    margin: 0;
+    padding: 0;
+}
 
-.menu-item {}
+.menu-item {
+    width: 450px;
+}
 
 .menu-link {
     margin: 0;
@@ -53,17 +70,24 @@ body {
     font-weight: 700;
     line-height: 24px;
     color: #000000;
+    text-decoration: none;
 }
 
-.user-name-list {}
+.user-name-list {
+    margin: 0;
+    padding: 0;
+}
 
-.user-menu-item {}
+.user-menu-item {
+    width: 200px;
+}
 
 .user-menu-link {
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
     color: #000000;
+    text-decoration: none;
 }
 
 .page-main {
@@ -81,22 +105,35 @@ body {
 }
 
 .visually-hidden {
-    position: fixed;
-    transform: scale(0);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.quote {
+    display: block;
+    margin: 0 auto;
 }
 
 .reasons {}
 
 .reason-slogan {
+    margin: 0;
+    padding: 0;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
-    text-transform: uppercase;
     text-align: center;
 }
 
 .reason-desc {
-
+    margin: 0;
+    padding: 0;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -114,33 +151,38 @@ body {
 }
 
 .reason-title {
-    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
     text-align: center;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
-
 }
 
 .desc-reason {
-    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
     text-align: center;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
-
 }
 
 .reason-titles {
+    margin: 0;
+    padding: 0;
     color: #000000;
     text-align: center;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
-
 }
 
 .desc-reasons {
+    margin: 0;
+    padding: 0;
     color: #000000;
     text-align: center;
     font-size: 18px;
@@ -149,9 +191,10 @@ body {
 }
 
 .advantages {
+    margin: 0;
+    padding: 0;
     color: #000000;
     text-align: center;
-    font-family: "PT Sans";
 }
 
 .advantages-list {
@@ -159,29 +202,36 @@ body {
     padding: 0;
 }
 
-..advantages-item {}
+.advantages-item {
+    margin: 0;
+    padding: 0;
+}
 
 .advantages-title {
+    margin: 0;
+    padding: 0;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
 }
 
-..advantages-decs {
+.advantages-decs {
+    margin: 0;
+    padding: 0;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
 }
 
 .button-search {
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
-    font-family: "PT Sans";
     font-size: 20px;
     font-weight: 700;
     line-height: 36px;
     border-radius: 4px;
     background: #756157;
+    text-decoration: none;
 }
 
 .page-footer {
@@ -189,11 +239,15 @@ body {
         url(../images/subsсribe.jpg);
 }
 
-.subscribe {}
+.subscribe {
+    margin: 0;
+    padding: 0;
+}
 
 .subscribe-title {
-    color: #FFFFFF;
-    font-family: "PT Sans";
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -201,29 +255,32 @@ body {
 }
 
 .subscribe-desc {
-    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
     text-align: center;
-    font-family: "PT Sans";
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
 }
 
+.subscribe-form {}
+
 .button-subscribe {
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
-    font-family: "PT Sans";
     font-size: 20px;
     font-weight: 700;
     line-height: 36px;
-    border-radius: 0px 4px 4px 0px;
     background: #82B3D3;
-
 }
 
 .social {}
 
-.social-list {}
+.social-list {
+    margin: 0;
+    padding: 0;
+}
 
 .social-item {}
 
@@ -232,12 +289,17 @@ body {
 .phone {
     color: #000000;
     text-align: center;
-    font-family: "PT Sans";
     font-size: 40px;
     font-weight: 400;
     line-height: 40px;
 }
 
-.button {}
+.button {
+    text-decoration: none;
+}
 
 .text {}
+
+.navigation-logo {}
+
+.logo-html {}
