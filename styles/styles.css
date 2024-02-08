@@ -14,10 +14,6 @@
     font-display: swap;
 }
 
-html {
-    height: 100%;
-}
-
 .body {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
@@ -32,6 +28,14 @@ html {
     min-height: 100%;
 }
 
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2)
+}
+
 .page-header {
     display: flex;
 }
@@ -43,20 +47,19 @@ html {
 .navigation {
     margin: 0;
     padding: 0;
-    list-style: none;
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
     color: #000000;
     background-color: #ffffff;
     display: flex;
-    width: 1200px;
-
 }
 
 .menu-list {
     margin: 0;
     padding: 0;
+    list-style: none;
+    display: flex;
 }
 
 .menu-item {
@@ -64,6 +67,7 @@ html {
 }
 
 .menu-link {
+    display: flex;
     margin: 0;
     padding: 0;
     font-size: 20px;
@@ -76,10 +80,11 @@ html {
 .user-name-list {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .user-menu-item {
-    width: 200px;
+
 }
 
 .user-menu-link {
@@ -100,8 +105,17 @@ html {
 }
 
 .welcome-quote {
-    background-image:
-        url(../images/index-background.jpg);
+    background-image: url("../images/triangle.svg"), url("../images/index-background.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 0, bottom 0, center top;
+    padding-top: 41px;
+    padding-bottom: 82px;
+    list-style-position: outside;
+    background-color: #79b3d9;
+    background-size: 100% 57px, cover;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
 }
 
 .visually-hidden {
@@ -116,6 +130,8 @@ html {
 }
 
 .quote {
+    width: 458px;
+    height: 352px;
     display: block;
     margin: 0 auto;
 }
@@ -144,6 +160,7 @@ html {
 .reason-list {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .reason-item {
@@ -200,6 +217,7 @@ html {
 .advantages-list {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .advantages-item {
@@ -215,13 +233,21 @@ html {
     line-height: 28px;
 }
 
-.advantages-decs {
+.advantages-desc {
     margin: 0;
     padding: 0;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
 }
+.search {
+    padding-top: 93px;
+    text-align: center;
+}
+
+.reason-slogan {}
+
+.reason-desc {}
 
 .button-search {
     color: #ffffff;
@@ -235,11 +261,12 @@ html {
 }
 
 .page-footer {
-    background-image:
-        url(../images/subsсribe.jpg);
+    padding-top: 214px;
 }
 
 .subscribe {
+    background-image:
+    url("../images/subsсribe.jpg");
     margin: 0;
     padding: 0;
 }
