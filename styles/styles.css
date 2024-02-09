@@ -10,7 +10,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/ptsans-400.woff2") format(woff2);
+    src: url("../fonts/ptsans-700.woff2") format(woff2);
     font-display: swap;
 }
 
@@ -23,8 +23,6 @@
     background-color: #ffffff;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
     min-height: 100%;
 }
 
@@ -37,7 +35,7 @@
 }
 
 .page-header {
-    display: flex;
+
 }
 
 .logo-link {}
@@ -52,14 +50,12 @@
     line-height: 24px;
     color: #000000;
     background-color: #ffffff;
-    display: flex;
 }
 
 .menu-list {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
 }
 
 .menu-item {
@@ -67,7 +63,6 @@
 }
 
 .menu-link {
-    display: flex;
     margin: 0;
     padding: 0;
     font-size: 20px;
@@ -83,9 +78,7 @@
     list-style: none;
 }
 
-.user-menu-item {
-
-}
+.user-menu-item {}
 
 .user-menu-link {
     font-size: 20px;
@@ -105,13 +98,12 @@
 }
 
 .welcome-quote {
+    background-color: #79b3d9;
     background-image: url("../images/triangle.svg"), url("../images/index-background.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: left 0, bottom 0, center top;
-    padding-top: 41px;
+    background-position: left 0 bottom 0, center top;
+    padding-top: 51px;
     padding-bottom: 82px;
-    list-style-position: outside;
-    background-color: #79b3d9;
     background-size: 100% 57px, cover;
     font-size: 18px;
     font-weight: 400;
@@ -140,16 +132,18 @@
 
 .reason-slogan {
     margin: 0;
-    padding: 0;
+    padding-top: 69px;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
     text-align: center;
+    text-transform: uppercase;
 }
 
-.reason-desc {
+.reason-describe {
     margin: 0;
-    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 41px;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -177,7 +171,7 @@
     line-height: 28px;
 }
 
-.desc-reason {
+.describe {
     margin: 0;
     padding: 0;
     color: #ffffff;
@@ -187,24 +181,29 @@
     line-height: 21px;
 }
 
-.reason-titles {
-    margin: 0;
-    padding: 0;
-    color: #000000;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28px;
+.desc {}
+
+.service {
+    padding-bottom: 64px;
 }
 
-.desc-reasons {
+.service-slogan {
     margin: 0;
-    padding: 0;
-    color: #000000;
+    padding-top: 64px;
     text-align: center;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.service-desc {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
     font-weight: 400;
-    line-height: 21px;
+    font-size: 22px;
+    line-height: 26px;
 }
 
 .advantages {
@@ -240,14 +239,33 @@
     font-weight: 400;
     line-height: 21px;
 }
+
 .search {
-    padding-top: 93px;
+    padding-top: 96px;
+    padding-bottom: 96px;
     text-align: center;
+
 }
 
-.reason-slogan {}
+.search-slogans {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
 
-.reason-desc {}
+.search-desc {
+    margin: 0;
+    padding: 0 0 54px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
 
 .button-search {
     color: #ffffff;
@@ -258,32 +276,34 @@
     border-radius: 4px;
     background: #756157;
     text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 8px 48px 8px;
 }
 
-.page-footer {
-    padding-top: 214px;
-}
+.page-footer {}
 
 .subscribe {
     background-image:
-    url("../images/subsсribe.jpg");
+        url("../images/subsсribe.jpg");
     margin: 0;
-    padding: 0;
+    padding-bottom: 104px;
 }
 
 .subscribe-title {
     margin: 0;
-    padding: 0;
+    padding-top: 96px;
     color: #ffffff;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .subscribe-desc {
     margin: 0;
-    padding: 0;
+    padding-top: 21px;
     color: #ffffff;
     text-align: center;
     font-size: 22px;
@@ -291,7 +311,11 @@
     line-height: 26px;
 }
 
-.subscribe-form {}
+.subscribe-form {
+    text-align: center;
+    margin-top: 53px;
+    padding-bottom: 11px;
+}
 
 .button-subscribe {
     color: #ffffff;
@@ -305,13 +329,16 @@
 .social {}
 
 .social-list {
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .social-item {}
 
-.social-link {}
+.social-link {
+    background-image: url("./images/social/vk.svg")
+}
 
 .phone {
     color: #000000;
