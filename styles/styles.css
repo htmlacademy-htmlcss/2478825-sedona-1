@@ -10,12 +10,12 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/ptsans-400.woff2") format(woff2);
+    src: url("../fonts/ptsans-700.woff2") format(woff2);
     font-display: swap;
 }
 
-body {
-    font-family: "PT Sans", "Arial" sans-serif;
+.body {
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
@@ -23,9 +23,20 @@ body {
     background-color: #ffffff;
     margin: 0;
     padding: 0;
+    min-height: 100%;
 }
 
-.page-header {}
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2)
+}
+
+.page-header {
+
+}
 
 .logo-link {}
 
@@ -34,7 +45,6 @@ body {
 .navigation {
     margin: 0;
     padding: 0;
-    list-style: none;
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
@@ -42,9 +52,15 @@ body {
     background-color: #ffffff;
 }
 
-.menu-list {}
+.menu-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-.menu-item {}
+.menu-item {
+    width: 450px;
+}
 
 .menu-link {
     margin: 0;
@@ -53,9 +69,14 @@ body {
     font-weight: 700;
     line-height: 24px;
     color: #000000;
+    text-decoration: none;
 }
 
-.user-name-list {}
+.user-name-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 .user-menu-item {}
 
@@ -64,6 +85,7 @@ body {
     font-weight: 700;
     line-height: 24px;
     color: #000000;
+    text-decoration: none;
 }
 
 .page-main {
@@ -76,27 +98,52 @@ body {
 }
 
 .welcome-quote {
-    background-image:
-        url(../images/index-background.jpg);
+    background-color: #79b3d9;
+    background-image: url("../images/triangle.svg"), url("../images/index-background.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 0 bottom 0, center top;
+    padding-top: 51px;
+    padding-bottom: 82px;
+    background-size: 100% 57px, cover;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
 }
 
 .visually-hidden {
-    position: fixed;
-    transform: scale(0);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.quote {
+    width: 458px;
+    height: 352px;
+    display: block;
+    margin: 0 auto;
 }
 
 .reasons {}
 
 .reason-slogan {
+    margin: 0;
+    padding-top: 69px;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
 }
 
-.reason-desc {
-
+.reason-describe {
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 41px;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -107,6 +154,7 @@ body {
 .reason-list {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .reason-item {
@@ -114,130 +162,198 @@ body {
 }
 
 .reason-title {
-    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
     text-align: center;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
-
 }
 
-.desc-reason {
-    color: #FFFFFF;
+.describe {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
     text-align: center;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
-
 }
 
-.reason-titles {
-    color: #000000;
+.desc {}
+
+.service {
+    padding-bottom: 64px;
+}
+
+.service-slogan {
+    margin: 0;
+    padding-top: 64px;
     text-align: center;
-    font-size: 24px;
     font-weight: 700;
-    line-height: 28px;
-
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
 }
 
-.desc-reasons {
-    color: #000000;
+.service-desc {
+    margin: 0;
+    padding-top: 20px;
     text-align: center;
-    font-size: 18px;
     font-weight: 400;
-    line-height: 21px;
+    font-size: 22px;
+    line-height: 26px;
 }
 
 .advantages {
+    margin: 0;
+    padding: 0;
     color: #000000;
     text-align: center;
-    font-family: "PT Sans";
 }
 
 .advantages-list {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
-..advantages-item {}
+.advantages-item {
+    margin: 0;
+    padding: 0;
+}
 
 .advantages-title {
+    margin: 0;
+    padding: 0;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
 }
 
-..advantages-decs {
+.advantages-desc {
+    margin: 0;
+    padding: 0;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
 }
 
-.button-search {
-    color: #FFFFFF;
+.search {
+    padding-top: 96px;
+    padding-bottom: 96px;
     text-align: center;
-    font-family: "PT Sans";
+
+}
+
+.search-slogans {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.search-desc {
+    margin: 0;
+    padding: 0 0 54px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.button-search {
+    color: #ffffff;
+    text-align: center;
     font-size: 20px;
     font-weight: 700;
     line-height: 36px;
     border-radius: 4px;
     background: #756157;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 8px 48px 8px;
 }
 
-.page-footer {
+.page-footer {}
+
+.subscribe {
     background-image:
-        url(../images/subsсribe.jpg);
+        url("../images/subsсribe.jpg");
+    margin: 0;
+    padding-bottom: 104px;
 }
-
-.subscribe {}
 
 .subscribe-title {
-    color: #FFFFFF;
-    font-family: "PT Sans";
+    margin: 0;
+    padding-top: 96px;
+    color: #ffffff;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .subscribe-desc {
-    color: #FFFFFF;
+    margin: 0;
+    padding-top: 21px;
+    color: #ffffff;
     text-align: center;
-    font-family: "PT Sans";
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
 }
 
-.button-subscribe {
-    color: #FFFFFF;
+.subscribe-form {
     text-align: center;
-    font-family: "PT Sans";
+    margin-top: 53px;
+    padding-bottom: 11px;
+}
+
+.button-subscribe {
+    color: #ffffff;
+    text-align: center;
     font-size: 20px;
     font-weight: 700;
     line-height: 36px;
-    border-radius: 0px 4px 4px 0px;
     background: #82B3D3;
-
 }
 
 .social {}
 
-.social-list {}
+.social-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
 .social-item {}
 
-.social-link {}
+.social-link {
+    background-image: url("./images/social/vk.svg")
+}
 
 .phone {
     color: #000000;
     text-align: center;
-    font-family: "PT Sans";
     font-size: 40px;
     font-weight: 400;
     line-height: 40px;
 }
 
-.button {}
+.button {
+    text-decoration: none;
+}
 
 .text {}
+
+.navigation-logo {}
+
+.logo-html {}
