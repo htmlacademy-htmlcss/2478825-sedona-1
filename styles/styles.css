@@ -35,38 +35,41 @@
 }
 
 .page-header {
-    display: flex;
+    position: relative;
     width: 1200px;
 }
 
 .logo-link {
-    margin-left: 70px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 70px;
 }
 
 .logo {}
 
 .navigation {
     margin: 0;
-    padding: 0;
+    padding: 0 70px;
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
     color: #000000;
     background-color: #ffffff;
     display: flex;
+    justify-content: space-between;
 }
 
 .menu-list {
     margin: 0;
-    padding-top: 20px;
-    padding-left: 32px;
+    padding-left: 169px;
     list-style: none;
     width: 339px;
     display: flex;
 }
 
 .menu-item {
-    width: 450px;
+    padding: 20px 16px;
 }
 
 .menu-link {
@@ -80,15 +83,18 @@
 }
 
 .user-name-list {
+    width: 268px;
+    height: 64px;
+    background-color: red;
     margin: 0;
     padding: 0;
     list-style: none;
-    margin-left: auto;
     display: flex;
 }
 
 .user-menu-item {
-    padding-top: 20px;
+    width: 44px;
+    padding: 14px 0;
 }
 
 .user-menu-search {
@@ -97,33 +103,30 @@
     line-height: 24px;
     color: #000000;
     text-decoration: none;
-
 }
 
 .user-menu-favorit {
     text-decoration: none;
     color: #000000;
-
 }
 
 .user-menu-want {
-    font-size: 20px;
+    margin-left: 20px;
+    width: 92px;
+    height: 20px;
+    font-size: 16px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 20px;
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
-    padding: 8px 50px;
-    gap: 10px;
     background-color: #756157;
-    display: inline-block;
     border-radius: 4px;
-
+    display: block;
+    padding: 8px 34px;
 }
-
-
 
 .page-main {
     margin: 0;
@@ -131,7 +134,6 @@
     list-style: none;
     color: #000000;
     background-color: #ffffff;
-
 }
 
 .welcome-quote {
@@ -189,16 +191,29 @@
 }
 
 .reason-list {
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
     list-style: none;
+}
 
+.desc {
+    width: 800px;
+    height: 385px;
 }
 
 .reason-item {
+    display: flex;
     background: #82B3D3;
+}
+
+.div {
     width: 400px;
 }
 
@@ -215,17 +230,6 @@
 .describe {
     margin: 0;
     padding: 0;
-    color: #ffffff;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
-
-}
-
-.desc {
-    width: 800px;
-    height: 385px;
 }
 
 .service {
@@ -250,6 +254,8 @@
     font-size: 22px;
     line-height: 26px;
 }
+
+
 
 .advantages {
     margin: 0;
@@ -283,6 +289,7 @@
     font-weight: 700;
     line-height: 28px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .advantages-desc {
@@ -291,6 +298,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
+    text-align: center;
 }
 
 .search {
@@ -369,31 +377,53 @@
 }
 
 .subscribe-form {
+    width: 684px;
+    display: flex;
     text-align: center;
     margin-top: 53px;
-    padding-bottom: 11px;
+    padding-left: 258px;
 }
 
-.email {}
+.email {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 4px 0 0 4px;
+    width: 452px;
+}
 
 .button-subscribe {
+
     color: #ffffff;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
     line-height: 36px;
     background: #82B3D3;
+    width: 232px;
+    text-transform: uppercase;
+    height: 52px;
+    border-radius: 0 4px 4px 0;
 }
 
-.social {}
+.social {
+    justify-content: space-between;
+    display: flex;
+    padding: 45px 70px;
+}
 
 .social-list {
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.social-item {}
+.social-item {
+    width: 47.33px;
+    height: 40px;
+    background-color: red;
+}
 
 .social-link-vk {
     background-image: url("../images/vk.svg");
@@ -411,9 +441,11 @@
     background-image: url("../images/youtube.svg");
     width: 47.33px;
     height: 40px;
+
 }
 
 .phone {
+    padding-right: 142px;
     color: #000000;
     text-align: center;
     font-size: 40px;
@@ -422,10 +454,15 @@
 }
 
 .button {
+    color:#000000;
+    padding-left: 143px;
     text-decoration: none;
 }
 
-.text {}
+.text {
+    display: block;
+    padding-top: 3px;
+}
 
 .navigation-logo {}
 
