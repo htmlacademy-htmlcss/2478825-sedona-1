@@ -85,6 +85,8 @@
 
 .user-name-list {
     width: 268px;
+    height: 64px;
+    background-color: red;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -94,12 +96,6 @@
 .user-menu-item {
     width: 44px;
     padding: 14px 0;
-}
-
-.search {
-    background-image: url("../images/search.svg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .user-menu-search {
@@ -113,20 +109,6 @@
 .user-menu-favorit {
     text-decoration: none;
     color: #000000;
-}
-
-.favorit {
-    background-image: url("../images/favorites.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.number {
-    background-color: #7DB54F;
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
 }
 
 .user-menu-want {
@@ -186,12 +168,11 @@
     margin: 0 auto;
 }
 
-.reasons {
-    padding-top: 69px;
-}
+.reasons {}
 
 .reason-slogan {
     margin: 0;
+    padding-top: 69px;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -202,7 +183,7 @@
 .reason-describe {
     margin: 0;
     padding-top: 25px;
-    padding-bottom: 90px;
+    padding-bottom: 41px;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -215,6 +196,7 @@
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+    color: #ffffff;
     text-align: center;
     font-size: 18px;
     font-weight: 400;
@@ -224,38 +206,22 @@
 
 .desc {
     width: 800px;
+    height: 385px;
 }
 
 .reason-item {
-    background: #83B3D333;
-    color: #000000;
     display: flex;
-
-}
-
-.reason-item:nth-child(2n) {
-    background: #ffffff;
-    color: #000000;
-}
-
-.div-img {
     background: #82B3D3;
-    color: #ffffff;
-    padding: 102px 0;
-    width: 400px;
 }
 
 .div {
-
-    padding: 113px 0;
     width: 400px;
 }
 
 .reason-title {
-    width: 200px;
-    text-transform: uppercase;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
+    color: #ffffff;
     text-align: center;
     font-size: 24px;
     font-weight: 700;
@@ -263,17 +229,18 @@
 }
 
 .describe {
-    width: 230px;
-    margin: 0 auto;
-    padding-top: 60px;
+    margin: 0;
+    padding: 0;
 }
 
 .service {
     padding-top: 64px;
+    /* background-color: red; */
 }
 
 .service-slogan {
     margin: 0;
+    /* padding-top: 64px; */
     text-align: center;
     font-weight: 700;
     font-size: 30px;
@@ -308,7 +275,7 @@
 
 .advantages-item {
     width: 400px;
-    background-color: #83B3D31F;
+    background-color: rgba(255, 99, 71, 0.445);
     padding-top: 184px;
     padding-bottom: 81px;
     background-image: url("../images/house.svg");
@@ -317,7 +284,7 @@
 }
 
 .advantages-item:nth-child(2n) {
-    background-color: #ffffff
+    background-color: rgba(0, 255, 255, 0.342);
 }
 
 .advantages-item-house {
@@ -352,7 +319,7 @@
     text-align: center;
 }
 
-.search-text {
+.search {
     padding-top: 96px;
     padding-bottom: 96px;
     text-align: center;
@@ -400,7 +367,7 @@
 
 .subscribe {
     padding-top: 96px;
-    background-color: #83B3D3;
+    background-color: brown;
     background-image: url("../images/subsсribe.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -472,7 +439,6 @@
 
 .social-list {
     display: flex;
-    flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -481,31 +447,27 @@
 .social-item {
     width: 47.33px;
     height: 40px;
+    background-color: red;
 }
 
-.vk {
+.social-link-vk {
     background-image: url("../images/vk.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 47.33px;
+    height: 40px;
 }
 
-.social-link-vk {}
-
-.tel {
+.social-link-telegramm {
     background-image: url("../images/telegramm.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 47.33px;
+    height: 40px;
 }
 
-.social-link-telegramm {}
-
-.youtube {
+.social-link-youtube {
     background-image: url("../images/youtube.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
+    width: 47.33px;
+    height: 40px;
 
-.social-link-youtube {}
+}
 
 .phone {
     padding-right: 142px;

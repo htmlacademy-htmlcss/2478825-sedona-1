@@ -4,12 +4,13 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
+        <link rel="stylesheet" href="styles/stylescat.css">
     </head>
 
     <body class="body">
         <header class="inner-header">
             <a class="logo-link" href="index.html">
-                <img class="logo" src="#" alt="логотип сайта городка Седона">
+                <img class="logo" src="./images/logotip.svg" alt="Логотип сайта городка Седона">
             </a>
             <nav class="navigation">
                 <ul class="menu-list">
@@ -20,23 +21,23 @@
                         <a href="#" class="menu-link">О Седоне</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link menu-link-current">Гостиницы</a>
+                        <a href="#" class="menu-link">Гостиницы</a>
                     </li>
                 </ul>
                 <ul class="user-name-list">
-                    <li class="user-menu-item">
-                        <a href="#" class="user-menu-link">
+                    <li class="user-menu-item search">
+                        <a href="#" class="user-menu-search">
                             <span class="visually-hidden">Поиск по сайту</span>
                         </a>
                     </li>
-                    <li class="user-menu-item">
-                        <a href="#" class="user-menu-link">
+                    <li class="user-menu-item favorit">
+                        <a href="#" class="user-menu-favorit">
                             <span class="visually-hidden">Избранное</span>
-                            <span class="favorit">12</span>
+                            <span class="number"></span>
                         </a>
                     </li>
                     <li class="user-menu-item">
-                        <a href="#" class="user-menu-link">Хочу сюда!</a>
+                        <a href="#" class="user-menu-want">Хочу сюда!</a>
                     </li>
                 </ul>
             </nav>
@@ -99,41 +100,40 @@
                 </fieldset>
             </section>
 
-
-
             <footer class="page-footer">
                 <section class="subscribe">
                     <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-                    <p class="subscribe-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
+                    <p class="subscribe-desc">Только полезная информация и никакого спама, <br> честное бойскаутское!
+                    </p>
                     <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
                         <label for="email"></label>
-                        <input type="email" id="email" name="subscribe-email" placeholder="Ваш e-mail">
+                        <input class="email" type="email" id="email" name="subscribe-email" placeholder="Ваш e-mail">
                         <button class="button-subscribe" type="submit">Подписаться</button>
                     </form>
                 </section>
                 <section class="social">
                     <h2 class="visually-hidden">Социальные сети</h2>
                     <ul class="social-list">
-                        <li class="social-site-item">
-                            <img class="button-icon" src="#" alt="В контакте">
+                        <li class="social-item vk">
+                            <a class="social-link-vk" href="#" aria-label="Страница в ВК"></a>
                         </li>
-                        <li class="social-site-item">
-                            <img class="button-icon" src="#" alt="Телеграмм">
+                        <li class="social-item tel">
+                            <a class="social-link-telegramm" href="#" aria-label="Наш телеграмм"></a>
                         </li>
-                        <li class="social-site-item">
-                            <img class="button-icon" src="#" alt="YouTube">
-                        </li>
-                        <li class="phone-item">
-                            <a class="button" href="tel:+78128121212">+7 812 812-12-12</a>
-                        </li>
-                        <li class="text-item">
-                            <img class="logo" src="#" alt="Логотип академии">
+                        <li class="social-item youtube">
+                            <a class="social-link-youtube" href="#" aria-label="Наш профиль в YouTube"></a>
                         </li>
                     </ul>
+                    <div class="phone">
+                        <a class="button" href="tel:+78128121212">+7 (812) 812-12-12</a>
+                    </div>
+                    <div class="text">
+                        <a class="navigation-logo" href="https://htmlacademy.ru/">
+                            <img class="logo-html" alt="Логотип HTML академии" src="./images/html academy.svg">
+                        </a>
+                    </div>
                 </section>
-
             </footer>
-
     </body>
 
 </html>
