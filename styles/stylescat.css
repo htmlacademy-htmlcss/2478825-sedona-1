@@ -158,7 +158,11 @@
     padding: 8px 34px;
 }
 
-.main-inner {}
+.main-inner {
+    background-color: #156194;
+    background-image: url("../imagecatalog/filtr.jpg");
+    background-repeat: no-repeat;
+}
 
 .inner-header-title {}
 
@@ -216,9 +220,9 @@
     width: 684px;
     display: flex;
     text-align: center;
-    margin-top: 54px;
-    padding-left: 258px;
+    margin: 54px auto;
 }
+
 
 .email {
     background-color: #F2F2F2;

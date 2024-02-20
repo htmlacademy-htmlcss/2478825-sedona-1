@@ -127,6 +127,11 @@
     width: 20px;
     height: 20px;
     border-radius: 10px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10px;
+    text-align: center;
+    color: #ffffff;
 }
 
 .user-menu-want {
@@ -145,6 +150,21 @@
     border-radius: 4px;
     display: block;
     padding: 8px 34px;
+}
+
+.user-menu-want:hover {
+    background: #615048;
+}
+
+.user-menu-want:focus {
+    background: #615048;
+}
+
+.user-menu-want:active {
+    background: #756157;
+}
+.user-menu-want:disabled {
+    background: #E5E5E5;
 }
 
 .page-main {
@@ -246,7 +266,6 @@
 }
 
 .div {
-
     padding: 113px 0;
     width: 400px;
 }
@@ -265,7 +284,7 @@
 .describe {
     width: 230px;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 62px;
 }
 
 .service {
@@ -353,7 +372,7 @@
 }
 
 .search-text {
-    padding-top: 96px;
+    padding-top: 97px;
     padding-bottom: 96px;
     text-align: center;
 
@@ -396,6 +415,22 @@
     box-sizing: border-box;
 }
 
+.button-search:hover {
+    background: #615048;
+}
+
+.button-search:focus {
+    background: #615048;
+}
+
+.button-search:active {
+    background: #756157;
+}
+
+.button-search:disabled {
+    background: #E5E5E5;
+}
+
 .page-footer {}
 
 .subscribe {
@@ -405,7 +440,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    padding-bottom: 104px;
+    padding-bottom: 52px;
 }
 
 .subscribe-title {
@@ -420,7 +455,7 @@
 
 .subscribe-desc {
     margin: 0;
-    padding-top: 21px;
+    padding-top: 20px;
     color: #ffffff;
     text-align: center;
     font-size: 22px;
@@ -432,8 +467,7 @@
     width: 684px;
     display: flex;
     text-align: center;
-    margin-top: 54px;
-    padding-left: 258px;
+    margin: 54px auto;
 }
 
 .email {
@@ -445,12 +479,11 @@
     width: 452px;
     border: none;
     min-height: 52px;
-    padding-left: 21px;
+    padding-left: 20px;
     box-sizing: border-box;
 }
 
 .button-subscribe {
-
     color: #ffffff;
     text-align: center;
     font-size: 20px;
@@ -464,10 +497,26 @@
     font-family: "PT Sans", Arial, sans-serif;
 }
 
+.button-subscribe:hover {
+    background: #68A2CA;
+}
+
+.button-subscribe:focus {
+    background: #68A2CA;
+}
+
+.button-subscribe:active {
+    background: #82B3D3;
+}
+
+.button-subscribe:disabled {
+    background: #E5E5E5;
+}
+
 .social {
     justify-content: space-between;
     display: flex;
-    padding: 45px 70px;
+    padding: 44px 70px;
 }
 
 .social-list {
@@ -489,7 +538,19 @@
     background-position: center;
 }
 
-.social-link-vk {}
+.social-link {}
+
+.social-link:hover {
+    background-color: #68A2CA;
+}
+
+.social-link:focus {
+    background-color: #68A2CA;
+}
+
+.social-link:active {
+    background-color: #68A2CA4D;
+}
 
 .tel {
     background-image: url("../images/telegramm.svg");
@@ -497,7 +558,6 @@
     background-position: center;
 }
 
-.social-link-telegramm {}
 
 .youtube {
     background-image: url("../images/youtube.svg");
@@ -505,7 +565,7 @@
     background-position: center;
 }
 
-.social-link-youtube {}
+.social-link {}
 
 .phone {
     padding-right: 142px;
@@ -523,11 +583,35 @@
     display: block;
 }
 
+.button:hover {
+    color: #756157;
+}
+
+.button:focus {
+    color: #756157;
+}
+
+.button:active {
+    color: #7561574D;
+}
+
 .text {
     display: block;
     padding-top: 3px;
 }
 
 .navigation-logo {}
+
+.navigation-logo:hover {
+    color: #756157;
+}
+
+.navigation-logo:focus {
+    color: #756157;
+}
+
+.navigation-logo:active {
+    color: #7561574D;
+}
 
 .logo-html {}
