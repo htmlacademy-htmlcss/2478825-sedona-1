@@ -85,6 +85,8 @@
 
 .user-name-list {
     width: 268px;
+    height: 64px;
+    background-color: red;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -94,12 +96,6 @@
 .user-menu-item {
     width: 44px;
     padding: 14px 0;
-}
-
-.search {
-    background-image: url("../images/search.svg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .user-menu-search {
@@ -113,25 +109,6 @@
 .user-menu-favorit {
     text-decoration: none;
     color: #000000;
-}
-
-.favorit {
-    background-image: url("../images/favorites.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.number {
-    background-color: #7DB54F;
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 10px;
-    text-align: center;
-    color: #ffffff;
 }
 
 .user-menu-want {
@@ -150,21 +127,6 @@
     border-radius: 4px;
     display: block;
     padding: 8px 34px;
-}
-
-.user-menu-want:hover {
-    background: #615048;
-}
-
-.user-menu-want:focus {
-    background: #615048;
-}
-
-.user-menu-want:active {
-    background: #756157;
-}
-.user-menu-want:disabled {
-    background: #E5E5E5;
 }
 
 .page-main {
@@ -206,12 +168,11 @@
     margin: 0 auto;
 }
 
-.reasons {
-    padding-top: 69px;
-}
+.reasons {}
 
 .reason-slogan {
     margin: 0;
+    padding-top: 69px;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -222,7 +183,7 @@
 .reason-describe {
     margin: 0;
     padding-top: 25px;
-    padding-bottom: 90px;
+    padding-bottom: 41px;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -235,6 +196,7 @@
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+    color: #ffffff;
     text-align: center;
     font-size: 18px;
     font-weight: 400;
@@ -244,37 +206,22 @@
 
 .desc {
     width: 800px;
+    height: 385px;
 }
 
 .reason-item {
-    background: #83B3D333;
-    color: #000000;
     display: flex;
-
-}
-
-.reason-item:nth-child(2n) {
-    background: #ffffff;
-    color: #000000;
-}
-
-.div-img {
     background: #82B3D3;
-    color: #ffffff;
-    padding: 102px 0;
-    width: 400px;
 }
 
 .div {
-    padding: 113px 0;
     width: 400px;
 }
 
 .reason-title {
-    width: 200px;
-    text-transform: uppercase;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
+    color: #ffffff;
     text-align: center;
     font-size: 24px;
     font-weight: 700;
@@ -282,17 +229,18 @@
 }
 
 .describe {
-    width: 230px;
-    margin: 0 auto;
-    padding-top: 62px;
+    margin: 0;
+    padding: 0;
 }
 
 .service {
     padding-top: 64px;
+    /* background-color: red; */
 }
 
 .service-slogan {
     margin: 0;
+    /* padding-top: 64px; */
     text-align: center;
     font-weight: 700;
     font-size: 30px;
@@ -327,7 +275,7 @@
 
 .advantages-item {
     width: 400px;
-    background-color: #83B3D31F;
+    background-color: rgba(255, 99, 71, 0.445);
     padding-top: 184px;
     padding-bottom: 81px;
     background-image: url("../images/house.svg");
@@ -336,7 +284,7 @@
 }
 
 .advantages-item:nth-child(2n) {
-    background-color: #ffffff
+    background-color: rgba(0, 255, 255, 0.342);
 }
 
 .advantages-item-house {
@@ -371,8 +319,8 @@
     text-align: center;
 }
 
-.search-text {
-    padding-top: 97px;
+.search {
+    padding-top: 96px;
     padding-bottom: 96px;
     text-align: center;
 
@@ -415,32 +363,16 @@
     box-sizing: border-box;
 }
 
-.button-search:hover {
-    background: #615048;
-}
-
-.button-search:focus {
-    background: #615048;
-}
-
-.button-search:active {
-    background: #756157;
-}
-
-.button-search:disabled {
-    background: #E5E5E5;
-}
-
 .page-footer {}
 
 .subscribe {
     padding-top: 96px;
-    background-color: #83B3D3;
+    background-color: brown;
     background-image: url("../images/subsсribe.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    padding-bottom: 52px;
+    padding-bottom: 104px;
 }
 
 .subscribe-title {
@@ -455,7 +387,7 @@
 
 .subscribe-desc {
     margin: 0;
-    padding-top: 20px;
+    padding-top: 21px;
     color: #ffffff;
     text-align: center;
     font-size: 22px;
@@ -467,7 +399,8 @@
     width: 684px;
     display: flex;
     text-align: center;
-    margin: 54px auto;
+    margin-top: 54px;
+    padding-left: 258px;
 }
 
 .email {
@@ -479,11 +412,12 @@
     width: 452px;
     border: none;
     min-height: 52px;
-    padding-left: 20px;
+    padding-left: 21px;
     box-sizing: border-box;
 }
 
 .button-subscribe {
+
     color: #ffffff;
     text-align: center;
     font-size: 20px;
@@ -497,31 +431,14 @@
     font-family: "PT Sans", Arial, sans-serif;
 }
 
-.button-subscribe:hover {
-    background: #68A2CA;
-}
-
-.button-subscribe:focus {
-    background: #68A2CA;
-}
-
-.button-subscribe:active {
-    background: #82B3D3;
-}
-
-.button-subscribe:disabled {
-    background: #E5E5E5;
-}
-
 .social {
     justify-content: space-between;
     display: flex;
-    padding: 44px 70px;
+    padding: 45px 70px;
 }
 
 .social-list {
     display: flex;
-    flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -530,42 +447,27 @@
 .social-item {
     width: 47.33px;
     height: 40px;
+    background-color: red;
 }
 
-.vk {
+.social-link-vk {
     background-image: url("../images/vk.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 47.33px;
+    height: 40px;
 }
 
-.social-link {}
-
-.social-link:hover {
-    background-color: #68A2CA;
-}
-
-.social-link:focus {
-    background-color: #68A2CA;
-}
-
-.social-link:active {
-    background-color: #68A2CA4D;
-}
-
-.tel {
+.social-link-telegramm {
     background-image: url("../images/telegramm.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 47.33px;
+    height: 40px;
 }
 
-
-.youtube {
+.social-link-youtube {
     background-image: url("../images/youtube.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
+    width: 47.33px;
+    height: 40px;
 
-.social-link {}
+}
 
 .phone {
     padding-right: 142px;
@@ -583,35 +485,11 @@
     display: block;
 }
 
-.button:hover {
-    color: #756157;
-}
-
-.button:focus {
-    color: #756157;
-}
-
-.button:active {
-    color: #7561574D;
-}
-
 .text {
     display: block;
     padding-top: 3px;
 }
 
 .navigation-logo {}
-
-.navigation-logo:hover {
-    color: #756157;
-}
-
-.navigation-logo:focus {
-    color: #756157;
-}
-
-.navigation-logo:active {
-    color: #7561574D;
-}
 
 .logo-html {}
