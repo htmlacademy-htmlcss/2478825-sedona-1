@@ -349,10 +349,10 @@
   width: 50px;
   height: 1px;
   border-top: 2px solid rgba(0, 0, 0, 0.302);
-  ;
   left: 50%;
   transform: translateX(-50%);
   top: 29px;
+
 }
 
 .service {
@@ -778,6 +778,7 @@
   display: none;
 }
 
+
 .breadcrumbs-link {
   width: 6px;
   height: 9px;
@@ -802,6 +803,7 @@
   grid-template-columns: 151px 221px 288px 191px;
   justify-content: space-between;
   padding-top: 22px;
+
 }
 
 .search-option {
@@ -876,6 +878,7 @@
   display: none;
 }
 
+
 .checkbox-input:checked+.checkbox-label::after {
   display: block;
 }
@@ -913,6 +916,7 @@
   display: none;
 }
 
+
 .radio-input:checked+.radio-label::after {
   display: block;
 }
@@ -920,7 +924,7 @@
 .cost {
   position: relative;
   display: flex;
-  margin-top: 32px;
+  margin-top: 33px;
   gap: 2px;
 }
 
@@ -1012,7 +1016,7 @@
 
 .apply {
   display: block;
-  margin-top: 56px;
+  margin-top: 57px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1059,6 +1063,7 @@
   padding: 8px 50px 8px 50px;
   background: transparent;
   border: none;
+
 }
 
 .reset:hover {
@@ -1109,6 +1114,7 @@
 .number-stars {}
 
 .button-cards {
+
   display: flex;
   width: 230px;
   flex-wrap: wrap;
@@ -1118,12 +1124,14 @@
 
 .button-card {
   position: relative;
+
   display: block;
   width: 44px;
   height: 44px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
 }
+
 
 .cards {
   position: absolute;
@@ -1161,6 +1169,8 @@
   background-repeat: no-repeat;
   text-align: center;
 }
+
+
 .product-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
@@ -1321,6 +1331,7 @@
 
 .stars-raiting-five {
   width: 107px;
+
 }
 
 .raiting {
