@@ -84,7 +84,6 @@
                   <label class="checkbox-label" for="parking">Парковка</label>
                 </li>
                 <li class="search-option-item">
-
                   <input class="checkbox-input visually-hidden" type="checkbox" id="wi-fi" name="wi-fi" >
                  <label class="checkbox-label" for="wi-fi">Wi-Fi</label>
 
@@ -96,16 +95,16 @@
               <ul class="search-option-list">
                 <li class="search-option-item">
 
-                 <input class="radio-input visually-hidden" type="radio" name="hotel" id="hotel" checked>
-                  <label class="radio-label" for="hotel" value="hotel">Гостиница</label>
+                 <input class="radio-input visually-hidden" type="radio" name="type" id="hotel" value="hotel" checked>
+                  <label class="radio-label" for="hotel">Гостиница</label>
                 </li>
                 <li class="search-option-item">
-                  <input class="radio-input visually-hidden" type="radio" name="hotel" id="motel">
-                  <label class="radio-label" for="motel" value="motel">Мотель</label>
+                  <input class="radio-input visually-hidden" type="radio" name="type" value="motel" id="motel">
+                  <label class="radio-label" for="motel" >Мотель</label>
                 </li>
                 <li class="search-option-item">
-                  <input class="radio-input visually-hidden" type="radio" name="hotel" id="apartments">
-                  <label class="radio-label" for="apartments" value="apartment">Апартаменты</label>
+                  <input class="radio-input visually-hidden" type="radio" name="type" value="apartment" id="apartments">
+                  <label class="radio-label" for="apartments">Апартаменты</label>
 
                 </li>
               </ul>
@@ -140,10 +139,12 @@
         <section class="catalog-hotels">
           <h2 class="hotels">Найдено гостиниц: 38</h2>
           <select class="select-control" aria-label="Сортировка">
+            <span class="appearance"></span>
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
             <option value="number-stars">По количеству звезд</option>
           </select>
+
           <div class="button-cards">
             <a class="button-card" href="#">
               <span class="visually-hidden">Показать карточки</span>
@@ -188,7 +189,7 @@
             </div>
             <div class="cards-container">
               <a class="hotel-details" href="#">Подробнее</a>
-              <a class="hotel-favorites" href="#">В избранное</a>
+              <a class=" green-button" href="#">В избранном</a>
 
               <p class="stars-raiting stars-raiting-four"></p>
 
@@ -235,7 +236,7 @@
         </ul>
         <ul class="pagination">
           <li class="pagination-item1">
-            <a class="pagination-current pagination-link">1</a>
+            <a class="pagination-link pagination-current ">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -253,11 +254,7 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
-
       </main>
-
-
-
       <footer class="page-footer">
         <section class="subscribe-catalog">
           <h2 class="subscribe-title-catalog">Подпишитесь на рассылку</h2>
