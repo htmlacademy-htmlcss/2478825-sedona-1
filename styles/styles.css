@@ -99,6 +99,17 @@
   line-height: 24px;
   color: #000000;
   text-decoration: none;
+  position: relative;
+}
+
+.menu-active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 15px;
+  width: 68%;
+  height: 1px;
+  border-bottom: 2px solid #756257;
 }
 
 .user-name-list {
@@ -267,16 +278,17 @@
 }
 
 .reason-slogan {
-  margin: 0;
+  margin: 0 auto;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  max-width: 660px;
 }
 
 .reason-describe {
-  margin: 0;
+  margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 90px;
   font-size: 22px;
@@ -284,6 +296,7 @@
   font-weight: 400;
   line-height: 26px;
   text-align: center;
+  max-width: 660px;
 }
 
 .reason-list {
@@ -381,21 +394,23 @@
 }
 
 .service-slogan {
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  max-width: 600px;
 }
 
 .service-desc {
-  margin: 0 0 63px;
+  margin: 0 auto 63px;
   padding-top: 20px;
   text-align: center;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  max-width: 600px;
 }
 
 .advantages {
@@ -474,6 +489,7 @@
   padding: 0;
   text-align: center;
   padding-bottom: 20px;
+  max-width: 600px;
 }
 
 .search-desc {
@@ -531,23 +547,25 @@
 }
 
 .subscribe-title {
-  margin: 0;
+  margin: 0 auto;
   color: #ffffff;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  max-width: 600px;
 }
 
 .subscribe-desc {
-  margin: 0;
-  padding-top: 20px;
+  margin: 0 auto;
+  padding-top: 21px;
   color: #ffffff;
   text-align: center;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+  max-width: 600px;
 }
 
 .subscribe-form {
@@ -729,6 +747,7 @@
 }
 
 .navigation-logo {
+  display: block;
   color: #000000;
 }
 
@@ -823,7 +842,7 @@
   display: grid;
   grid-template-columns: 151px 221px 288px 191px;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 21px;
 
 }
 
@@ -859,7 +878,7 @@
   padding: 0;
   list-style-type: none;
   color: #ffffff;
-margin-top: 16px;
+  margin-top: 16px;
 }
 
 .checkbox-label {
@@ -898,7 +917,7 @@ margin-top: 16px;
 }
 
 
-.checkbox-input:checked + .checkbox-label::after {
+.checkbox-input:checked+.checkbox-label::after {
   display: block;
 }
 
@@ -936,14 +955,14 @@ margin-top: 16px;
 }
 
 
-.radio-input:checked + .radio-label::after {
+.radio-input:checked+.radio-label::after {
   display: block;
 }
 
 .cost {
   position: relative;
   display: flex;
-  margin-top: 33px;
+  margin-top: 32px;
   gap: 2px;
 }
 
@@ -960,6 +979,20 @@ margin-top: 16px;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+}
+
+.cost-from:hover {
+  background: #e6e6e6;
+}
+
+.cost-from:focus {
+  background: #e6e6e6;
+  border: 3px solid #83b3d3;
+}
+
+.cost-from:active {
+  background: #f2f2f2;
+  border: 3px solid #000000;
 }
 
 
@@ -982,6 +1015,20 @@ margin-top: 16px;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+}
+
+.cost-till:hover {
+  background: #e6e6e6;
+}
+
+.cost-till:focus {
+  background: #e6e6e6;
+  border: 3px solid #83b3d3;
+}
+
+.cost-till:active {
+  background: #f2f2f2;
+  border: 3px solid #000000;
 }
 
 .catalog-filter-till {
@@ -1033,6 +1080,16 @@ margin-top: 16px;
   z-index: 10;
 }
 
+.handler:hover {}
+
+.handler:focus {
+  border: 3px solid #83b3d3;
+}
+
+.handler:active {
+  border: 2px solid #83b3d3;
+}
+
 .handler-min {
   left: 0;
 }
@@ -1044,7 +1101,7 @@ margin-top: 16px;
 .apply {
   font-family: "PT Sans", "Arial", sans-serif;
   display: block;
-  margin-top: 57px;
+  margin-top: 56px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1111,14 +1168,14 @@ margin-top: 16px;
 
 
 .catalog-hotels {
-  padding: 50px 70px 39px;
+  padding: 50px 70px 38px;
   display: flex;
   width: 1060px;
 }
 
 .hotels {
   min-width: 338px;
-  padding-top: 7px;
+  padding-top: 6px;
   margin: 0;
   font-weight: 700;
   font-size: 30px;
@@ -1144,6 +1201,22 @@ margin-top: 16px;
 
 }
 
+.select-control:hover {
+  border: 2px solid #68a2ca;
+}
+
+.select-control:focus {
+  border: 2px solid #68a2ca;
+}
+
+.select-control:active {
+  border: 2px solid #3f5e72;
+}
+
+.select-control:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.302);
+}
+
 .appearance {
   width: 20px;
   height: 20px;
@@ -1158,7 +1231,7 @@ margin-top: 16px;
 .number-stars {}
 
 .button-cards {
-  margin-left: 30px;
+  margin-left: 28px;
   display: flex;
   width: 200px;
   flex-wrap: wrap;
@@ -1202,6 +1275,16 @@ margin-top: 16px;
   list-style: none;
   row-gap: 18px;
   column-gap: 20px;
+  position: relative;
+}
+
+.product-list::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #e6e6e6;
+  width: 1060px;
+  height: 0px;
+  bottom: -38px;
 }
 
 .hotel-card {
@@ -1244,6 +1327,7 @@ margin-top: 16px;
   grid-column: 2 / 2;
   margin: 0;
   padding: 0;
+  text-align: end;
 }
 
 
@@ -1386,7 +1470,7 @@ margin-top: 16px;
 
 .pagination {
   margin-bottom: 22px;
-  margin-top: 40px;
+  margin-top: 39px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -1465,29 +1549,31 @@ margin-top: 16px;
 .page-footer {}
 
 .subscribe-catalog {
-  padding-top: 96px;
+  padding-top: 95px;
   margin: 0;
   padding-bottom: 52px;
 }
 
 .subscribe-title-catalog {
-  margin: 0;
+  margin: 0 auto;
   color: #000000;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  max-width: 600px;
 }
 
 .subscribe-desc-catalog {
-  margin: 0;
+  margin: 0 auto;
   padding-top: 20px;
   color: #000000;
   text-align: center;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+  max-width: 600px;
 }
 
 .email {
@@ -1599,6 +1685,56 @@ margin-top: 16px;
   border: none;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.container-people {
+  margin-bottom: 40px;
+  display: flex;
+  width: 577px;
+}
+
+.people {
+  display: flex;
+  width: 247px;
+}
+
+.container-number {
+  background-color: #f2f2f2;
+  width: 121px;
+}
+
+.minus {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 40px;
+  height: 48px;
+}
+
+.plus {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 40px;
+  height: 48px;
+}
+
+.adults {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  border: none;
+  width: 31px;
+  height: 42px;
+}
+
+.children {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  border: none;
+  width: 31px;
+  height: 42px;
 }
 
 .button-modal {
