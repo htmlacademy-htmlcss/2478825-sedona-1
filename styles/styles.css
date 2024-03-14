@@ -14,7 +14,6 @@
   font-display: swap;
 }
 
-
 .body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -843,7 +842,6 @@
   grid-template-columns: 151px 221px 288px 191px;
   justify-content: space-between;
   padding-top: 21px;
-
 }
 
 .search-option {
@@ -993,6 +991,7 @@
 .cost-from:active {
   background: #f2f2f2;
   border: 3px solid #000000;
+
 }
 
 
@@ -1029,6 +1028,7 @@
 .cost-till:active {
   background: #f2f2f2;
   border: 3px solid #000000;
+
 }
 
 .catalog-filter-till {
@@ -1215,6 +1215,7 @@
 
 .select-control:disabled {
   border: 2px solid rgba(0, 0, 0, 0.302);
+
 }
 
 .appearance {
@@ -1314,7 +1315,6 @@
   font-size: 24px;
   line-height: 28px;
 }
-
 
 
 .hotel-card-price {
@@ -1435,6 +1435,7 @@
   height: 17px;
   background: url("../images/star.svg") space 0 0;
 }
+
 
 .stars-raiting-one {
   width: 20px;
@@ -1735,6 +1736,7 @@
   border: none;
   width: 31px;
   height: 42px;
+
 }
 
 .button-modal {
@@ -1751,3 +1753,4 @@
   text-transform: uppercase;
   color: #FFFFFF;
 }
+
