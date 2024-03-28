@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-
   <body class="body">
     <div class="container">
       <header class="page-header">
@@ -62,15 +60,12 @@
               <a class="breadcrumbs-link" href="./index.html">
                 <img class="icon-main-menu" src="./images/imagecatalog/icon.svg" alt="Иконка главного меню"></a>
             </li>
-
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
           <h2 class="visually-hidden"> Параметры поиска с фильтрами</h2>
-
           <form class="form" action="https://echo.htmlacademy.ru/" method="get">
-
             <fieldset class="search-option">
               <legend class="search-option-title">Инфраструктура:</legend>
               <ul class="search-option-list">
@@ -86,7 +81,6 @@
                 <li class="search-option-item">
                   <input class="checkbox-input visually-hidden" type="checkbox" id="wi-fi" name="wi-fi">
                   <label class="checkbox-label" for="wi-fi">Wi-Fi</label>
-
                 </li>
               </ul>
             </fieldset>
@@ -110,11 +104,9 @@
             <fieldset class="search-option">
               <legend class="search-option-title">Стоимость, ₽:</legend>
               <div class="cost">
-
                 <input class="cost-from" type="text" placeholder="0" value="0" name="min-price">
                 <label class="catalog-filter-from">от</label>
-                <input class="cost-till" type="text" placeholder="9000" value="9000" name="max-price">
-
+                <input class="cost-from cost-till" type="text" placeholder="9000" value="9000" name="max-price">
                 <label class="catalog-filter-till">до</label>
               </div>
               <div class="container-cost">
@@ -137,23 +129,20 @@
         <section class="catalog-hotels">
           <h2 class="hotels">Найдено гостиниц: 38</h2>
           <select class="select-control" aria-label="Сортировка">
-            <span class="appearance"></span>
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
             <option value="number-stars">По количеству звезд</option>
           </select>
-
           <div class="button-cards">
             <a class="button-view button-tile" href="#">
               <span class="visually-hidden">Показать карточки</span>
-
             </a>
             <a class="button-view button-card" href="#">
               <span class="visually-hidden">Показать крупные карточки с описанием</span>
-
             </a>
             <a class="button-view button-list" href="#">
               <span class="visually-hidden">Показать список</span>
+              <span class="list-card"></span>
             </a>
           </div>
         </section>
@@ -221,7 +210,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link-more">...</a>
+            <a class="pagination-link-more" href="#">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -236,7 +225,7 @@
           </p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="email"></label>
-            <input class="email" type="email" id="email" name="subscribe-email" placeholder="Ваш e-mail">
+            <input class="email-catalog" type="email" id="email" name="subscribe-email" placeholder="Ваш e-mail">
             <button class="button-subscribe" type="submit">Подписаться</button>
           </form>
         </section>
@@ -318,5 +307,4 @@
       </footer>
     </div>
   </body>
-
 </html>
