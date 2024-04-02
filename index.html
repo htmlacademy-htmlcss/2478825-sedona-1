@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="body">
@@ -47,7 +47,7 @@
               <span class="number">12</span>
             </a>
           </li>
-          <li class="user-menu-item ">
+          <li class="user-menu-item">
             <a href="#" class="user-menu-want">Хочу сюда!</a>
           </li>
         </ul>
@@ -165,7 +165,7 @@
         <div class="phone">
           <a class="button" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
-        <div class="text">
+        <div class="text-logo">
           <a class="navigation-logo" href="https://htmlacademy.ru/">
             <svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" fill="currentColor" />
@@ -208,7 +208,7 @@
       </section>
     </footer>
   </div>
-  <div class="modal modal-close1">
+  <div class="modal modal-close">
     <div class="modal-container">
       <button class="modal-close-button" type="button">
         <svg class="close-svg" width="15" height="15" viewBox="0 0 15 15" fill="none"
@@ -225,14 +225,14 @@
           <div class="form-container">
             <label class="modal-label-form" for="arrival-date">Дата Заезда:</label>
             <div class="container-date">
-              <input type="text" id="arrival-date" name="arrival-date" class="date" value="27 апреля 2020">
+              <input class="date" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату">
               <p class="comment"> Мы не можем отправить вас в прошлое.</p>
             </div>
           </div>
           <div class="form-container">
             <label class="modal-label-form" for="departure-date">Дата Выезда:</label>
             <div class="container-date">
-              <input type="text" id="departure-date" name="departure-date" class="date" value="1 сентября 2023">
+              <input class="date" type="text" id="departure-date" name="departure-date" value="1 сентября 2023" placeholder="Укажите дату">
               <p class="comment comment2">На эти даты есть свободные номера. Пока есть.</p>
             </div>
           </div>
@@ -246,7 +246,7 @@
                     <path d="M3 9V11H17V9H3Z" fill="currentColor" />
                   </svg>
                 </button>
-                <input class="people-number" type="number" min="0" id="adults" name="number" placeholder="2">
+                <input class="people-number" type="number" min="0" id="adults" name="adults" value="2">
                 <button class="plus" type="button">
                   <svg class="plus-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -280,7 +280,7 @@
                       <path d="M3 9V11H17V9H3Z" fill="currentColor" />
                     </svg>
                   </button>
-                  <input class="people-number" type="number" min="0" id="children" name="number" placeholder="2">
+                  <input class="people-number" type="number" min="0" id="children" name="children" value="2">
                   <button class="plus" type="button">
                     <svg class="plus-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
