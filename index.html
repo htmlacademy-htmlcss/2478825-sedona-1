@@ -233,21 +233,21 @@
             <label class="modal-label-form" for="departure-date">Дата Выезда:</label>
             <div class="container-date">
               <input class="date" type="text" id="departure-date" name="departure-date" value="1 сентября 2023" placeholder="Укажите дату">
-              <p class="comment comment2">На эти даты есть свободные номера. Пока есть.</p>
+              <p class="comment comment-error">На эти даты есть свободные номера. Пока есть.</p>
             </div>
           </div>
           <div class="container-people">
             <div class="people">
               <label class="modal-label-form" for="adults"> Взрослые:</label>
               <div class="container-number">
-                <button class="minus" type="button">
+                <button class="minus-plus" type="button">
                   <svg class="minus-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 9V11H17V9H3Z" fill="currentColor" />
                   </svg>
                 </button>
                 <input class="people-number" type="number" min="0" id="adults" name="adults" value="2">
-                <button class="plus" type="button">
+                <button class="minus-plus" type="button">
                   <svg class="plus-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
@@ -274,14 +274,14 @@
                   </span>
                 </span>
                 <span class="container-number">
-                  <button class="minus" type="button">
+                  <button class="minus-plus" type="button">
                     <svg class="minus-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9V11H17V9H3Z" fill="currentColor" />
                     </svg>
                   </button>
                   <input class="people-number" type="number" min="0" id="children" name="children" value="2">
-                  <button class="plus" type="button">
+                  <button class="minus-plus" type="button">
                     <svg class="plus-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
