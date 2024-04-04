@@ -1202,7 +1202,7 @@
 }
 
 .select-control {
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   padding: 12px 33px 12px 17px;
   margin-left: 201px;
   font-weight: 400;
