@@ -10,7 +10,7 @@
   <div class="container">
     <header class="page-header">
       <a class="logo-link" href="#">
-        <img class="logo" src="./images/logotip.svg" alt="Логотип сайта городка Седона" width="140" height="70">
+        <img class="logo" src="./images/logotype.svg" alt="Логотип сайта городка Седона" width="140" height="70">
       </a>
       <nav class="navigation">
         <ul class="menu-list">
@@ -37,8 +37,8 @@
             </a>
           </li>
           <li class="user-menu-item">
-            <a href="#" class="user-menu-favorit">
-              <svg class="favorit" xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none">
+            <a href="#" class="user-menu-favorite">
+              <svg class="favorite" xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none">
                 <path
                   d="M8.9 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5L9 14.4l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"
                   fill="currentColor"></path>
@@ -225,14 +225,14 @@
           <div class="form-container">
             <label class="modal-label-form" for="arrival-date">Дата Заезда:</label>
             <div class="container-date">
-              <input class="date" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату">
+              <input class="date" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату" required>
               <p class="comment"> Мы не можем отправить вас в прошлое.</p>
             </div>
           </div>
           <div class="form-container">
             <label class="modal-label-form" for="departure-date">Дата Выезда:</label>
             <div class="container-date">
-              <input class="date" type="text" id="departure-date" name="departure-date" value="1 сентября 2023" placeholder="Укажите дату">
+              <input class="date" type="text" id="departure-date" name="departure-date" value="1 сентября 2023" placeholder="Укажите дату" required>
               <p class="comment comment-error">На эти даты есть свободные номера. Пока есть.</p>
             </div>
           </div>
@@ -245,13 +245,15 @@
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 9V11H17V9H3Z" fill="currentColor" />
                   </svg>
+                  <span class="visually-hidden">Уменьшить</span>
                 </button>
-                <input class="people-number" type="number" min="0" id="adults" name="adults" value="2">
+                <input class="people-number" type="number" min="0" id="adults" name="adults" value="2" required>
                 <button class="minus-plus" type="button">
                   <svg class="plus-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
                   </svg>
+                  <span class="visually-hidden">Увеличить</span>
                 </button>
               </div>
             </div>
@@ -266,6 +268,7 @@
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
                         fill="white" />
                     </svg>
+                    <span class="visually-hidden">Уточняющий комментарий</span>
                   </button>
                   <span class="tultip-container">
                     <span class="tultip-text"> Укажите количество детей, которые будут с вами,
@@ -277,15 +280,17 @@
                   <button class="minus-plus" type="button">
                     <svg class="minus-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3 9V11H17V9H3Z" fill="currentColor" />
+                      <path d="M3 9V11H17V9H3Z" fill="currentColor" />  
                     </svg>
+                    <span class="visually-hidden">Уменьшить</span>
                   </button>
-                  <input class="people-number" type="number" min="0" id="children" name="children" value="2">
+                  <input class="people-number" type="number" min="0" id="children" name="children" value="2" required>
                   <button class="minus-plus" type="button">
                     <svg class="plus-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
                     </svg>
+                    <span class="visually-hidden">Увеличить</span>
                   </button>
                 </span>
               </span>

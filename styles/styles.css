@@ -21,7 +21,7 @@
   font-weight: 400;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   margin: 0;
   padding: 0;
 }
@@ -159,7 +159,7 @@
   background-color: rgba(181, 186, 190, 0.388);
 }
 
-.user-menu-favorit {
+.user-menu-favorite {
   position: relative;
   text-decoration: none;
   color: #000000;
@@ -168,24 +168,24 @@
   display: block;
 }
 
-.user-menu-favorit:hover {
+.user-menu-favorite:hover {
   background-color: rgba(131, 179, 211, 0.158);
   opacity: 0.7;
 }
 
-.user-menu-favorit:focus {
+.user-menu-favorite:focus {
   outline: none;
   opacity: 0.7;
   background-color: rgba(131, 179, 211, 0.158);
 }
 
-.user-menu-favorit:active {
+.user-menu-favorite:active {
   opacity: 1.0;
   color: #000000;
   background-color: rgba(181, 186, 190, 0.388);
 }
 
-.favorit {
+.favorite {
   position: absolute;
   top: 24px;
   left: 13px;
@@ -306,6 +306,7 @@
   line-height: 26px;
   text-align: center;
   max-width: 660px;
+  color: #333333;
 }
 
 .reason-list {
@@ -385,6 +386,7 @@
   margin: 0 auto;
   padding-top: 62px;
   position: relative;
+  color: #333333;
 }
 
 .describe::before {
@@ -420,6 +422,7 @@
   font-size: 22px;
   line-height: 26px;
   max-width: 600px;
+  color: #333333;
 }
 
 .advantages {
@@ -480,6 +483,7 @@
   font-weight: 400;
   line-height: 21px;
   text-align: center;
+  color: #333333;
 }
 
 .search-text {
@@ -508,6 +512,7 @@
   line-height: 26px;
   text-align: center;
   max-width: 600px;
+  color: #333333;
 }
 
 .button-search {
@@ -707,8 +712,7 @@
 }
 
 .phone {
-  padding-left: 153px;
-  padding-right: 150px;
+  width: 720px;
   color: #000000;
   text-align: center;
   font-size: 40px;
@@ -765,7 +769,7 @@
 
 .inner {
   background-color: #156194;
-  background-image: url("../images/imagecatalog/filtr.jpg");
+  background-image: url("../images/imagecatalog/filter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 35px 70px 55px;
@@ -1188,6 +1192,7 @@
 .catalog-hotels {
   padding: 50px 70px 39px;
   display: flex;
+  flex-wrap: wrap;
   width: 1060px;
 }
 
@@ -1204,7 +1209,7 @@
 .select-control {
   font-family: "PT Sans", Arial, sans-serif;
   padding: 12px 33px 12px 17px;
-  margin-left: 201px;
+  margin-left: 200px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1213,6 +1218,7 @@
   width: 292px;
   height: 49px;
   appearance: none;
+  background-color: #ffffff;
   background-image: url("../images/imagecatalog/appearance.svg");
   background-repeat: no-repeat;
   background-position: right 18px top 18px;
@@ -1287,7 +1293,7 @@
 }
 
 .button-list {
-  background-image: url("../images/imagecatalog/veiw3.svg");
+  background-image: url("../images/imagecatalog/view3.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1480,33 +1486,33 @@
   background: #e5e5e5;
 }
 
-.stars-raiting {
+.stars-rating {
   margin: 10px 0;
   height: 17px;
   background: url("../images/star.svg") space 0 0;
 }
 
-.stars-raiting-one {
+.stars-rating-one {
   width: 20px;
 }
 
-.stars-raiting-two {
+.stars-rating-two {
   width: 41px;
 }
 
-.stars-raiting-three {
+.stars-rating-three {
   width: 65px;
 }
 
-.stars-raiting-four {
+.stars-rating-four {
   width: 88px;
 }
 
-.stars-raiting-five {
+.stars-rating-five {
   width: 107px;
 }
 
-.raiting {
+.rating {
   text-transform: uppercase;
   background: #f2f2f2;
   font-weight: 400;
@@ -1809,6 +1815,7 @@ background-color: #e6e6e6;
   height: 48px;
   position: relative;
   cursor: pointer;
+  background-color: #f2f2f2;
 }
 
 .minus-plus:focus {
@@ -1849,6 +1856,12 @@ background-color: #e6e6e6;
 
 .plus-icon:active {
   opacity: 0.2;
+}
+
+.minus-plus:focus-within .plus-icon {
+  outline: 3px solid #82b3d3;
+  border-radius: 4px;
+  color: #000000;
 }
 
 .people-number {
@@ -1972,6 +1985,7 @@ opacity: 0.3;
   background: #83b3d3;
   border-radius: 10px;
   border: none;
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
