@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format(woff2);
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,13 +10,13 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format(woff2);
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
 .body {
   min-width: 1200px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -585,7 +585,7 @@
 }
 
 .email {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -613,7 +613,7 @@
 }
 
 .email-catalog {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -652,7 +652,7 @@
   text-transform: uppercase;
   border-radius: 0 4px 4px 0;
   border: none;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   cursor: pointer;
 }
 
@@ -821,6 +821,15 @@
   color: #ffffff;
   cursor: pointer;
  text-decoration: none;
+}
+
+.breadcrumbs-icon {
+  background-image: url("../images/imagecatalog/icon.svg");
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 20px;
+  display: block;
+  background-position: center;
 }
 
 .breadcrumbs-link:hover {
@@ -1013,7 +1022,7 @@
   border: none;
   box-sizing: border-box;
   padding: 15px 41px 15px 20px;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -1116,7 +1125,7 @@
 }
 
 .apply {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   display: block;
   margin-top: 57px;
   font-weight: 700;
@@ -1154,7 +1163,7 @@
 }
 
 .reset {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   display: block;
   margin-top: 33px;
   font-weight: 700;
@@ -1192,12 +1201,12 @@
 .catalog-hotels {
   padding: 50px 70px 39px;
   display: flex;
-  flex-wrap: wrap;
+  align-items: flex-start;
   width: 1060px;
 }
 
 .hotels {
-  min-width: 338px;
+  width: 500px;
   padding-top: 6px;
   margin: 0;
   font-weight: 700;
@@ -1207,9 +1216,9 @@
 }
 
 .select-control {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   padding: 12px 33px 12px 17px;
-  margin-left: 200px;
+  margin-left: 40px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1320,6 +1329,7 @@
   grid-template-columns: 140px 140px;
   gap: 16px 20px;
   display: grid;
+  align-items: start;
   width: 300px;
   min-height: 398px;
   border-radius: 4px;
@@ -1380,8 +1390,7 @@
 }
 
 .hotel-details {
-  grid-column: 1 / 2;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1416,8 +1425,7 @@
 }
 
 .hotel-favorites {
-  grid-column: 2 / 2;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1435,7 +1443,7 @@
 
 .green-button {
   font-weight: 700;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -1749,7 +1757,7 @@ background-color: #e6e6e6;
 
 .date {
   margin-bottom: 4px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -1865,7 +1873,7 @@ background-color: #e6e6e6;
 }
 
 .people-number {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -1985,7 +1993,7 @@ opacity: 0.3;
   background: #83b3d3;
   border-radius: 10px;
   border: none;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
